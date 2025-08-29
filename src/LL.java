@@ -66,14 +66,7 @@ public class LL {
     }
 
     // Deletion of last node
-    public Node get(int index){
-        Node node=head;
-        for(int i=0;i<index;i++){
-            node =node.next;
 
-        }
-        return node;
-    }
 
     public int deletelast(){
         if(size<=1){
@@ -84,6 +77,41 @@ public class LL {
         tail=secondLast;
         tail.next=null;
         return val;
+    }
+    // Delete a particular index node
+
+    public int delete(int index){
+        if(index==0){
+            return deletefirst();
+        } if(index==size-1){
+            return deletelast();
+
+        }
+        Node prev=get(index-1);
+        int val = prev.next.value;
+        prev.next=prev.next.next;
+        return val;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public Node get(int index){
+        Node node=head;
+        for(int i=0;i<index;i++){
+            node =node.next;
+
+        }
+        return node;
     }
 
     public void display(){
