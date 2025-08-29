@@ -7,7 +7,7 @@ public class LL {
     public LL() {
         this.size=0;
     }
-    // to insert a new node in head
+    // to insert a new node in head I.E INSERT A NODE @ FIRST
     public void insertFirst(int value){
         Node node = new Node(value);
         node.next=head;
@@ -17,7 +17,7 @@ public class LL {
 
         }
         size+=1;
-    }
+    }// Insert a node at a give of particular position
     public void insert(int value,int index){
         if(index==0){
             insertFirst(value);
@@ -36,7 +36,7 @@ public class LL {
         size++;
     }
 
-
+// Insert a node at the last / tail position
     public void insertLast(int value){
         if(tail == null){
             insertFirst(value);
