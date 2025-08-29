@@ -13,6 +13,7 @@ public class Main {
 //        System.out.println(list.deletefirst());
 //        System.out.println(list.deletelast());
         System.out.println(list.delete(2));
+        System.out.println(list.find(20));
         list.display();
 
 

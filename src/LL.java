@@ -96,14 +96,14 @@ public class LL {
 
     // To find a node in the list
     public Node find(int value){
-        Node node = jead;
+        Node node = head;
         while(node!=null){
             if(node.value==value){
                 return node;
             }
             node=node.next;
         }
-        return node;
+        return null;
     }
 
 
