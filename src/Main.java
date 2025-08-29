@@ -8,6 +8,7 @@ public class Main {
 
 
         list.insertLast(20);
+        list.insert(10,3);
         list.display();
 
 
