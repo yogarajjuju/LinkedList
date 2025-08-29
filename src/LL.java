@@ -7,6 +7,7 @@ public class LL {
     public LL() {
         this.size=0;
     }
+    //INSERTION OF NODES
     // to insert a new node in head I.E INSERT A NODE @ FIRST
     public void insertFirst(int value){
         Node node = new Node(value);
@@ -47,6 +48,21 @@ public class LL {
         tail.next=node;
         tail=node;
         size++;
+    }
+
+
+
+    //DELETION OF NODES
+
+    // Delete a node at first
+    public int deletefirst(){
+        int val=head.value;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        size--;
+        return val;
     }
 
     public void display(){
