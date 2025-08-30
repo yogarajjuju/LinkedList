@@ -48,6 +48,7 @@ public class LL {
         Node node = new Node(value);
         tail.next=node;
         tail=node;
+
         size++;
     }
 
@@ -65,6 +66,7 @@ public class LL {
         size--;
         return val;
     }
+
 
     // Deletion of last node
 
