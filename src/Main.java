@@ -21,7 +21,7 @@ public class Main {
         list.insertfirst(5);
         list.insertfirst(8);
         list.insertfirst(11);
-        list.diaplay();
+        list.display();
 
 
 

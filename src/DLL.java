@@ -13,14 +13,22 @@ public class DLL {
 
 
     }
-    public void diaplay(){
+    public void display(){
         Node node=head;
+        Node last = null;
         while(node!=null){
             System.out.print((node.val+ "-> "));
+            last=node;
             node=node.next;
 
         }
         System.out.println("END");
+        System.out.println("Reverse");
+        while(last!=null){
+            System.out.print(last.val+" -> ");
+            last=last.prev;
+        }
+        System.out.println("START");
     }
 
 
