@@ -24,6 +24,8 @@ public class Main {
 
         list.insertLast(33);
         list.display();
+        list.insert(11,20);
+        list.display();
 
 
 
