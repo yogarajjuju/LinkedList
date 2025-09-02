@@ -2,6 +2,10 @@ public class DLL {
 
     private Node head;
 
+    //Insertion
+
+    //Insert at the first
+
     public void insertfirst(int val){
         Node node= new Node(val);
         node.next=head;
@@ -13,6 +17,38 @@ public class DLL {
 
 
     }
+
+    // Insertion at the last and when tail was not given
+    public void insertLast(int val){
+        Node node = new Node(val);
+        Node last = head;
+        node.next=null;
+        if(head==null){
+            node.prev=null;
+            head=node;
+            return;
+        }
+        while(last.next!=null){
+            last=last.next;
+        }
+        last.next=node;
+        node.prev=last;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public void display(){
         Node node=head;
         Node last = null;
