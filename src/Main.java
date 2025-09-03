@@ -16,15 +16,24 @@ public class Main {
 //        System.out.println(list.find(20));
 //        list.display();
 
-       DLL  list = new DLL();
-        list.insertfirst(3);
-        list.insertfirst(5);
-        list.insertfirst(8);
-        list.insertfirst(11);
+//       DLL  list = new DLL();
+//        list.insertfirst(3);
+//        list.insertfirst(5);
+//        list.insertfirst(8);
+//        list.insertfirst(11);
+//
+//        list.insertLast(33);
+//        list.display();
+//        list.insert(11,20);
+//        list.display();
 
-        list.insertLast(33);
-        list.display();
-        list.insert(11,20);
+       CLL list = new CLL();
+       list.insert(20);
+       list.insert(50);
+       list.insert(60);
+       list.insert(40);
+       list.display();
+       list.delete(50);
         list.display();
 
 
