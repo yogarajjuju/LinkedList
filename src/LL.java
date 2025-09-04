@@ -54,6 +54,7 @@ public class LL {
 
     //Insertion using recursion
     // insert using recursion
+    // helper
     public void insertRec(int val, int index) {
         head = insertRec(val, index, head);
     }
