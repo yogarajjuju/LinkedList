@@ -196,10 +196,6 @@ public class LL {
 
 
 
-
-
-
-
     public static void main(String[] args) {
         LL list1 = new LL();
         LL list2=new LL();
