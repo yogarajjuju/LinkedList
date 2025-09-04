@@ -53,22 +53,21 @@ public class LL {
     }
 
     //Insertion using recursion
-    public void insertrec(int val,int index){
-
+    // insert using recursion
+    public void insertRec(int val, int index) {
+        head = insertRec(val, index, head);
     }
-    private Node insertrec(int val , int index, Node node){
-        if(index==0){
-            Node temp = new Node(val,node);
+    private Node insertRec(int val, int index, Node node) {
+        if (index == 0) {
+            Node temp = new Node(node, val);
             size++;
             return temp;
-
         }
 
-
-       node.next= insertrec(val,index--,node.next);
+        node.next = insertRec(val, index-1, node.next);
         return node;
-
     }
+
 
 
 
