@@ -175,9 +175,6 @@ public class LL {
            }
        }
 
-
-
-
        while(f!=null){
            ans.insertLast(f.value);
            f=f.next;
